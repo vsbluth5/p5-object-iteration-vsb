@@ -35,10 +35,19 @@ console.log(favoriteBooks.ronald)
 
 // LEVEL 2: In the addressBook.js file, there's an array called "contacts" with 100 objects inside of it. Each dictionary representes a person, and has that person's name, phone number, email, the company they work for, and their address.
 //    That means you could print the 7th person's email using this line of code:
-//    console.log(contacts[6]["email"]) // Uncomment this to see if it works. (Remember, list indexing starts at zero, so we use the number 6 to access the 7th name).
+console.log(contacts[6]["email"]) // Uncomment this to see if it works. 
+// (Remember, list indexing starts at zero, so we use the number 6 to access the 7th name).
 
 // 8. Print the address book.
+// console.log(contacts) // works, but not ideally
 
+contacts.forEach((contact)=>{
+  console.log(contact)
+})
+
+// for (let i = 0; i < contacts.length; i++){
+//   console.log(contacts[i])
+// }
 
 
 
