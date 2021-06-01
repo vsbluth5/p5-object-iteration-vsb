@@ -15,32 +15,23 @@ let favoriteBooks = {
 }
 
 // 1. Print out Martin's favorite book.
-
-
+console.log(favoriteBooks.martin)
 
 // 2. Print out Alexandra's favorite book.
-
-
-
+console.log(favoriteBooks.alexandra)
 
 // 3. Before we get started, let's adjust a few things. First off, Jeff just read a new book called "The Martian" and loved it. With just one line of code, change Jeff's favorite book to "The Martian"
-
-
+favoriteBooks.jeff = "The Martian"
 
 // 4. Print out Jeff's favorite book to confirm that the change was successful.
-
-
-
+console.log(favoriteBooks.jeff)
 
 // 5. We should also add Ronald to the list. His favorite book is "Lies my History Teacher Told Me."
 //    Add that info to the object as a new key-value pair.
-
-
+favoriteBooks.ronald = "Things my History Teacher Told Me..."
 
 // 6. Confirm that Ronald's book was added by printing it out.
-
-
-
+console.log(favoriteBooks.ronald)
 
 // LEVEL 2: In the addressBook.js file, there's an array called "contacts" with 100 objects inside of it. Each dictionary representes a person, and has that person's name, phone number, email, the company they work for, and their address.
 //    That means you could print the 7th person's email using this line of code:
