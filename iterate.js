@@ -62,17 +62,13 @@ console.log(contacts[0]["name"])
 // 12. Print out the name and phone number of the first person in the address book in the following format:
 //    "_____ can be reached at ______" filling in the blanks with the person's name and phone number.
 
-
-
-
-
+console.log(contacts[0].name +" can be reached at " + contacts[0].phone)
 
 // 13. Print out the same information "_____ can be reached at ______" with names and phone numbers for all 100 of our contacts.
 
-
-
-
-
+contacts.forEach((i)=>{
+  console.log(i["name"] +" can be reached at " + i["phone"])
+})
 
 // 14. We're going to send a mass text to all our contacts, so we need everyone's phone number. Our texting program can do it in an instant if we put all the numbers into an array.
 //    Create an array called phoneNumbers, iterate over our contacts, and add each person's number to that array. Print out the list when you're done to check your work.
@@ -84,3 +80,8 @@ console.log(contacts[0]["name"])
 
 // 15. If we wanted to send an email that was only useful for college students and their professors, we could send that email ONLY to folks in our contacts whose email addresses end in ".edu".
 //    Create an array called eduEmails and put every .edu email address from our contacts into that array. Print the array when you're done to check your work.
+
+contacts.forEach((i)=>{
+  if i["email"]
+  console.log(i["name"] +" can be reached at " + i["phone"])
+})
