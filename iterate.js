@@ -81,7 +81,11 @@ contacts.forEach((i)=>{
 // 15. If we wanted to send an email that was only useful for college students and their professors, we could send that email ONLY to folks in our contacts whose email addresses end in ".edu".
 //    Create an array called eduEmails and put every .edu email address from our contacts into that array. Print the array when you're done to check your work.
 
+let students = []
 contacts.forEach((i)=>{
-  if i["email"]
-  console.log(i["name"] +" can be reached at " + i["phone"])
+  if (i["email"].search(".edu") > 0) {
+    students.push(i)
+    
+  }
+  console.log(students)
 })
