@@ -42,7 +42,10 @@ console.log(contacts[6]["email"]) // Uncomment this to see if it works.
 // console.log(contacts) // works, but not ideally
 
 contacts.forEach((contact)=>{
-  console.log(contact)
+  contact.forEach(property)=> {
+    console.log(contact.property)
+  }
+  console.log()
 })
 
 // for (let i = 0; i < contacts.length; i++){
