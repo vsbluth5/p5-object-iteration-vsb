@@ -42,10 +42,7 @@ console.log(contacts[6]["email"]) // Uncomment this to see if it works.
 // console.log(contacts) // works, but not ideally
 
 contacts.forEach((contact)=>{
-  contact.forEach(property)=> {
-    console.log(contact.property)
-  }
-  console.log()
+    // console.log(contact)
 })
 
 // for (let i = 0; i < contacts.length; i++){
@@ -53,19 +50,14 @@ contacts.forEach((contact)=>{
 // }
 
 
-
 // 9. Print out the fifth person from the the address book.
-
-
-
+console.log(contacts[4]) 
 
 // 10. Print out the email of the 10th person from the address book.
-
-
+console.log(contacts[9]["email"]) 
 
 // 11 Print out the name of the first person from the address book.
-
-
+console.log(contacts[0]["name"]) 
 
 // 12. Print out the name and phone number of the first person in the address book in the following format:
 //    "_____ can be reached at ______" filling in the blanks with the person's name and phone number.
